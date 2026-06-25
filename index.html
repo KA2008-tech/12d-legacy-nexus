@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>12D Legacy Nexus</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- BACKGROUND -->
+<canvas id="stars"></canvas>
+<div class="overlay"></div>
+
+<!-- TOP BAR -->
+<div class="topbar">
+<div class="menu-btn" onclick="toggleSidebar()">⋮</div>
+<div class="title">12D Nexus</div>
+<div class="theme-btn" onclick="toggleTheme()">✦ Theme</div>
+</div>
+
+<!-- SIDEBAR -->
+<div id="sidebar" class="sidebar hidden">
+
+<div class="brand">
+<h1>12D NEXUS</h1>
+<p>Salt Saana • 2025</p>
+</div>
+
+<div class="menu">
+<button class="active" onclick="showPage('home',this)">🏠 Home</button>
+<button onclick="showPage('members',this)">👥 Members</button>
+<button onclick="showPage('teachers',this)">👨‍🏫 Teachers</button>
+<button onclick="showPage('hall',this)">🏆 Hall</button>
+</div>
+
+<div class="status">SYSTEM ONLINE</div>
+<div class="clock" id="clock">00:00:00</div>
+
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<!-- HOME -->
+<section id="home" class="page active">
+<h1>12D Legacy Nexus</h1>
+
+<div class="grid">
+<div class="card">45+ Students</div>
+<div class="card">30+ Projects</div>
+<div class="card">18+ Awards</div>
+<div class="card">12+ Universities</div>
+</div>
+</section>
+
+<!-- MEMBERS -->
+<section id="members" class="page">
+
+<h1>Members Database</h1>
+  
+<div class="search-wrap">
+<input id="search" onkeyup="searchMembers()" placeholder="Search student..." />
+<span class="search-icon">⌕</span>
+</div>
+
+<div class="member-grid">
+
+<div class="member-card"><div class="avatar">R</div><div class="info"><h3>Rodgers</h3><span class="tag">Cyber Systems Engineer</span><p>0970001111</p></div></div>
+<div class="member-card"><div class="avatar">O</div><div class="info"><h3>Oxcilia</h3><span class="tag">Biomedical Scientist</span><p>0961112222</p></div></div>
+<div class="member-card"><div class="avatar">C</div><div class="info"><h3>Class President</h3><span class="tag">Engineer</span><p>0952223333</p></div></div>
+<div class="member-card"><div class="avatar">A</div><div class="info"><h3>Angel</h3><span class="tag">Developer</span><p>0973334444</p></div></div>
+<div class="member-card"><div class="avatar">M</div><div class="info"><h3>Moses</h3><span class="tag">Civil Engineer</span><p>0964445555</p></div></div>
+<div class="member-card"><div class="avatar">B</div><div class="info"><h3>Brian</h3><span class="tag">Data Analyst</span><p>0955556666</p></div></div>
+<div class="member-card"><div class="avatar">S</div><div class="info"><h3>Sandra</h3><span class="tag">Nurse</span><p>0976667777</p></div></div>
+<div class="member-card"><div class="avatar">J</div><div class="info"><h3>James</h3><span class="tag">Mechanical Engineer</span><p>0967778888</p></div></div>
+<div class="member-card"><div class="avatar">L</div><div class="info"><h3>Linda</h3><span class="tag">Pharmacist</span><p>0958889999</p></div></div>
+<div class="member-card"><div class="avatar">K</div><div class="info"><h3>Kelvin</h3><span class="tag">IT Specialist</span><p>0971234567</p></div></div>
+<div class="member-card"><div class="avatar">E</div><div class="info"><h3>Esther</h3><span class="tag">Teacher</span><p>0962345678</p></div></div>
+<div class="member-card"><div class="avatar">P</div><div class="info"><h3>Peter</h3><span class="tag">Architect</span><p>0953456789</p></div></div>
+<div class="member-card"><div class="avatar">N</div><div class="info"><h3>Nancy</h3><span class="tag">Doctor</span><p>0974567890</p></div></div>
+<div class="member-card"><div class="avatar">T</div><div class="info"><h3>Thomas</h3><span class="tag">Electrician</span><p>0965678901</p></div></div>
+<div class="member-card"><div class="avatar">D</div><div class="info"><h3>Diana</h3><span class="tag">Law Student</span><p>0956789012</p></div></div>
+<div class="member-card"><div class="avatar">H</div><div class="info"><h3>Henry</h3><span class="tag">Pilot</span><p>0977890123</p></div></div>
+<div class="member-card"><div class="avatar">F</div><div class="info"><h3>Faith</h3><span class="tag">Journalist</span><p>0968901234</p></div></div>
+<div class="member-card"><div class="avatar">G</div><div class="info"><h3>Grace</h3><span class="tag">Entrepreneur</span><p>0959012345</p></div></div>
+
+</div>
+
+</section>
+
+<!-- TEACHERS -->
+<section id="teachers" class="page">
+<h1>Teachers Appreciation</h1>
+<div class="card">Thank you teachers for shaping our future.</div>
+</section>
+
+<!-- HALL -->
+<section id="hall" class="page">
+<h1>Hall of Legacy</h1>
+<div class="card">Achievements and excellence of 12D.</div>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
